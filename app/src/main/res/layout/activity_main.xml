@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="a5835512035.tem.MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="25sp"  />
+
+    <TextView
+        android:id="@+id/text2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/edg2"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="f"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edg1"
+        android:layout_width="300dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:hint="c to f"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/edg2"
+        android:width="300dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edg1"
+        android:hint="f to c "
+        android:gravity="center"
+
+
+        />
+    <Button
+        android:onClick="calcf"
+        android:id="@+id/bt1"
+        android:text="C-f"
+        app:layout_constraintTop_toBottomOf="@+id/edg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:onClick="calfc"
+        android:id="@+id/bt2"
+        android:text="F-C"
+        app:layout_constraintTop_toBottomOf="@+id/edg2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cauc"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"
+
+        />
+
+    <TextView
+
+        android:id="@+id/ca2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cauf"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"
+        app:layout_constraintRight_toRightOf="@+id/bt2"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
